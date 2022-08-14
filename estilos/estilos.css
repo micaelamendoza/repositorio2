@@ -1,0 +1,246 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap');
+</style>
+*{margin: 0%;}
+*{padding: 0%;}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 300;
+	
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+a {
+	text-decoration: none;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1200px;
+	margin: 20px auto;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, auto);
+	grid-template-areas:
+		'header			header   	header'
+		'destacado		destacado 	destacado'
+		'contenido		contenido 	aside'
+		'footer	 		footer 		footer';
+}
+
+
+.header {
+	grid-area: header;
+	padding: 20px;
+	background: #fff;
+	box-shadow: 0px 0px 70px rgba(235, 85, 85, 0.2);
+}
+
+.header .logo {
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	text-align: left;
+	letter-spacing: 3px;
+}
+
+.logo h1 {
+	font-size: 30px;
+}
+
+
+
+
+.menu {
+	border-top: 1px solid rgb(255, 101, 101);
+	border-bottom: 1px solid rgb(255, 121, 121);
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu a {
+	padding: 10px;
+	color: rgb(243, 113, 255);
+	display: block;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 400;
+	width: 100%;
+	text-align: center;
+	font-size: 16px;
+}
+
+.menu a:hover {
+	background: rgb(255, 96, 96);
+	color: #fff;
+}
+
+
+.articulo {
+	display: flex;
+	background: #fff;
+	box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
+}
+
+.articulo .contenedor-texto {
+	padding: 20px;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.articulo .contenedor-p {
+	width: 50%;
+}
+
+.articulo .titulo {
+	margin-bottom: 10px;
+	font-size: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+
+}
+
+.articulo .titulo a {
+	font-weight: 400;
+	color: #000;
+}
+
+.articulo .precio {
+	font-size: 16px;
+	color: #868b8d;
+	margin-bottom: 10px;
+}
+
+.articulo .extracto {
+	font-size: 20px; 
+	line-height: 25px; 
+	font-weight: 300;
+	margin-bottom: 20px; 
+	color: #868b8d;
+}
+
+
+.articulo.destacado {
+	grid-area: destacado;
+	color: rgb(0, 0, 0);
+	background-color: rgb(252, 113, 113);
+	display: grid;
+    color: #000;
+    display: flex;
+    align-content: center;
+	
+}
+
+.articulo.destacado .contenedor-p {
+	min-height: 100%;
+	width: 100%;
+}
+
+.articulo.destacado .contenedor-p a {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+
+.destacado .titulo a {
+	color: #fff;
+}
+
+.destacado .titulo::after {
+	content: '';
+	margin: 0.625em 0; 
+	display: block;
+	background-color: #868686;
+	width: 6em; 
+	height: 1px;
+}
+
+
+
+
+
+
+.contenido {
+	grid-area: contenido;
+	display: grid;
+	grid-template-columns: 1;
+	grid-gap: 20px; 
+}
+
+
+.sidebar {
+	padding: 5em 25px; 
+	text-align: center;
+	min-height: 100px; 
+	grid-area: aside;
+	background: rgb(255, 160, 160);
+	color: #02080a;
+	box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
+}
+
+.sidebar .acerca-de img {
+	
+	height: 100px; 
+	width: 100px; 
+	margin-bottom: 25px; 
+}
+
+.sidebar .bio {
+	margin-bottom: 25px; 
+	font-size: 20px; 
+	line-height: 25px; 
+}
+
+.sidebar .menu {
+	width: 100%;
+	display: inline-block;
+	background: #ccc;
+}
+
+.sidebar .menu a {
+	padding: 25px; 
+	color: #fff;
+	background-color: #000;
+	display: block;
+	font-size: 1em;
+	text-transform: uppercase;
+}
+
+.sidebar .menu a:hover {
+	background: #262626;
+}
+
+
+.contenedor .footer {
+	background: #fff;
+	font-size: 20px; 
+	grid-area: footer;
+	padding: 25px; 
+	text-align: right;
+	box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
+}
+
+
+
+
+
+
